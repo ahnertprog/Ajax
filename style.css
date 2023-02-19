@@ -516,18 +516,125 @@ Css de área esp
 }
 .section-service2 {
     background-color: white;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 280px;  
+    height: 380px;  
     margin: 20px;
     text-align: center;
     flex-direction: column;
 }
 .section-service2 h1 {
-    
-    font-weight: 400;
+    font-weight: 700;
     font-size: 15px;
+    text-transform: uppercase;
+    
+}
+.section-service2 h3 {
+    font-weight: 300;
+    color: #5c5a5aa9;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.section-service2 p {
+    margin-top: 15px;
+    padding: 5px;
+    color: #5c5a5aa9;
+}
+.bg-value {
+    background-color: #5c5a5a69;
+}
+.premium-prod .section-about-us--right img {
+    width: 50px;
+    border-radius: 30px;
+    box-shadow: none;
+    padding-left: 20px;
+    margin-left: -100px;
+    margin-bottom: -35px;
+}
+.premium-prod .section-about-us--right {
+    text-align: initial;
+    margin-left: 20px;
+    width:600px;
+}
+.premium-prod .section-about-us--right p {
+    text-align: initial;
+}
+.premium-prod .section-about-us--right li {
+    list-style-type:none;
+    padding: 3px;
+    text-transform: uppercase;
+}
+.section-service2 a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.section-body .button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.section-body .sliders-pointers {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.section-body .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-body .pointer.active {
+    background-color: blue;
+}
+.section-service3 h1 {
+    color:blue;
+    text-align: center;
+    font-size: 50px;
+}
+.section-service3 {
+
+    padding: 20px;
+}
+.section-body3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.section-body3 p {
+    margin-top: 20px;
+}
+.border-mini {
+    border: 1px solid #555;
+    
+    max-width: 10px;
+}
+.map .section-services-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.section-services-map iframe {
+    box-shadow: 5px 5px 20px black;
 }
