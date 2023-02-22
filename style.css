@@ -62,6 +62,9 @@ header {
     border-bottom: 5px solid black;
     color: black;
 }
+.menu-opener {
+    display: none;
+}
 
 
 
@@ -300,8 +303,28 @@ header {
 .section-contact--split input:first-child {
     margin-right:20px;
 }
-
-
+.send-email input[type=email] {
+    width: 220px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: black;
+}
+.send-email input[type=submit] {
+    width: 220px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: black;
+    cursor: pointer;
+    
+}
 
 
 /*
@@ -336,6 +359,7 @@ Css de área esp
 .section-services {
     display: flex;
 }
+
 .section-service {
     flex: 1;
     text-align: center;
@@ -598,8 +622,12 @@ Css de área esp
 .defalut.light .section-team-area {
     background-color:white;
 }
+.section-services2 {
+    display: flex;
+}
 .section-service2 {
     background-color: white;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,7 +668,6 @@ Css de área esp
 .premium-prod .section-about-us--right {
     text-align: initial;
     margin-left: 20px;
-    width:600px;
 }
 .premium-prod .section-about-us--right p {
     text-align: initial;
@@ -660,7 +687,7 @@ Css de área esp
     text-decoration: none;
     padding: 10px 20px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .section-body .button-2 {
     display: flex;
@@ -692,6 +719,9 @@ Css de área esp
     text-align: center;
     font-size: 50px;
 }
+.section-services3 {
+    display: flex;
+}
 .section-service3 {
 
     padding: 20px;
@@ -708,20 +738,24 @@ Css de área esp
 .section-body3 p {
     margin-top: 20px;
 }
-.border-mini {
-    border: 1px solid #555;
-    
-    max-width: 10px;
-}
 .map .section-services-map {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 }
 .section-services-map iframe {
     box-shadow: 5px 5px 20px black;
+}
+.maps {
+    width: 100vw;
+    max-width: 1140px;
+}
+.section-map--info {
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    margin-top: -500px;
 }
 .form {
     text-align: center;
@@ -741,5 +775,185 @@ Css de área esp
 .section-contact--split {
     flex-direction: column;
 }
+.rodape .section-service {
+    border: none;
+    
+
+}
+.rodape .section-services {
+    display:inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (min-width:450px) and (max-width:800px) {
+    .menu-opener{
+        display: block;
+        width: 30px;
+        margin-right: 30px;
+        
+
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(29, 29, 161, 0.9);
+        width: 80vw;
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 25px;
+        border: none;
+    }
+    .menu li.active a {
+        border: none;
+        color: blue;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+    .section-about-us {
+        flex-direction: column;
+    }
+    .section-about-us--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-about-us--right {
+        width: auto;
+    }
+    .section-services {
+        flex-wrap: wrap;
+    }
+    .section-service {
+        min-width: 50%;
+    }
+    .section-service:first-child {
+        border: none;
+    }
+    .section-team {
+        max-width: 580px;
+    }
+    .section-services2 {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-services3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width:450px) {
+    .menu-opener{
+        display: block;
+        width: 30px;
+        margin-right: 30px;
+        
+
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(29, 29, 161, 0.9);
+        width: 80vw;
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 18px;
+        border: none;
+    }
+    .menu li.active a {
+        border: none;
+        color: blue;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+    .section-about-us {
+        flex-direction: column;
+    }
+    .section-about-us--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-about-us--right {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: auto;
+    }
+    .section-about-us--right img {
+        width: 100%;
+    }
+    .premium-prod .section-about-us--right {
+        padding: 20px;
+    }
+    .premium-prod .section-about-us--right p {
+        width: none;
+    }
+    .section-services {
+        flex-wrap: wrap;
+    }
+    .section-service {
+        min-width: 100%;
+    }
+    .section-service:first-child {
+        border: none;
+    }
+    .section-team {
+        max-width: 280px;
+    }
+    .section-projects--filters {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-services2 {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-services3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner h1 {
+        font-size: 27px;
+    }
+    .banner h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+
 
 
