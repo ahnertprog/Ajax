@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=1 initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="style.css">
     <title>Projeto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu-opener").addEventListener("click", function(){
+                if(document.querySelector(".menu nav").style.display == 'flex'){
+                    document.querySelector(".menu nav").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav").style.display = 'flex';
+                }
+            });
+        };
+    </script>
 
 </head>
 <body>
@@ -21,6 +33,7 @@
             </div>
             </div>
             <div class="menu">
+                <img class="menu-opener" src="icones/menu.png">
                 <nav>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
@@ -290,7 +303,7 @@
             <div class="section-title">Price</div>
             <div class="section-desc">Pricing table</div>
             <div class="section-body">
-                <div class="section-services">
+                <div class="section-services2">
                     <div class="section-service2">
                         <div>
                             <h1>Express</h1>
@@ -397,7 +410,7 @@
             <div class="section-title">Services</div>
             <div class="section-desc">Services that we provide</div>
             <div class="section-body3">
-                <div class="section-services">
+                <div class="section-services3">
                     <div class="section-service3">
                         <h1>1000</h1>
                         <div class="border-mini"></div>
@@ -493,7 +506,36 @@
             <div class="section-body">
                 <div class="section-services-map">
                     <div class="section-service-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1468.7997998750727!2d-45.5396648458432!3d-20.02591488812593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b379e835ef1623%3A0xfb9eaf6f2596dc!2sHotel%20Prata!5e0!3m2!1spt-BR!2sbr!4v1676846561552!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1468.7997998750727!2d-45.5396648458432!3d-20.02591488812593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b379e835ef1623%3A0xfb9eaf6f2596dc!2sHotel%20Prata!5e0!3m2!1spt-BR!2sbr!4v1676846561552!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+            </div>
+        </section>
+
+
+        <section class="default dark rodape">
+            <div class="section-body">
+                <div class="section-services">
+                    <div class="section-service">
+                        <div class="section-team--social">
+                            <a href=""><img src="icones/facebook.png"></a>
+                                <a href=""><img src="icones/googleplus.png"></a>
+                                    <a href=""><img src="icones/linkedin.png"></a>
+                                        <a href=""><img src="icones/twitter.png"></a>
+                                            <a href=""><img src="icones/pinterest.png"></a>
+
+                        </div>
+                    </div>
+                    <div class="section-service">
+                        <p>Para reformular uma frase, parágrafo, redação ou artigo de maneira eficaz, esse parafraseador automático precisa de um conteúdo com boa gramática e ortografia, pois ele só pode reconhecer, entender e reescrever textos bem escritos. Para um recurso que reescreve artigos na forma de um bot, ele faz um bom trabalho respeitando o português e usando as substituições que fazem sentido. O conteúdo escrito com a primeira ou todas as letras em maiúscula ainda pode ser reformulado por este software. Por outro lado, quando a gramática do conteúdo é sensata e reconhecível, o Gerador de Frases Complexas pode facilitar a tarefa de parafrasear. Parafrasear o conteúdo no piloto automático é algo mais prático que pesquisar sinônimos de palavras ou frases e deduzir quais são os substitutos mais adequados para qualquer contexto.</p>
+                    </div>
+                    <div class="section-service">
+                        <form class="send-email" action="">
+                            <input type="email" placeholder="E-mail to subscribe">
+                            <br>
+                            <input type="submit">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
