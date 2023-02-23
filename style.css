@@ -1004,9 +1004,10 @@ Css de área esp
     .section-share--icon.pinterest {
         background-color:#b71c29;
     }
+    .section-team--social {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
-
-
-
-
